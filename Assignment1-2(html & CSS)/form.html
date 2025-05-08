@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">      commented for frameset eg
+
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+            padding: 15px;
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            border: 3px solid royalblue;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: darkslategray;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: royalblue;
+            outline: none;
+            background-color: lavender;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: royalblue;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: navy;
+        }
+
+        .terms {
+            font-size: 14px;
+        }
+    </style> -->
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+        
+        <label for="education">Education Level:</label>
+        <select id="education" name="education">
+            <option value="">Select Education Level</option>
+            <option value="highschool">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">PhD</option>
+        </select>
+        
+        <label>Skills:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="skills" value="coding"> Coding
+            <input type="checkbox" name="skills" value="design"> Design
+            <input type="checkbox" name="skills" value="marketing"> Marketing
+            <input type="checkbox" name="skills" value="writing"> Writing
+        </div>
+
+        <label for="website">Personal Website:</label>
+        <input type="url" id="website" name="website">
+        
+        <label for="range">Experience Level (0-10):</label>
+        <input type="range" id="range" name="range" min="0" max="10">
+        
+        <label class="terms">
+            <input type="checkbox" id="agree" name="agree" required> I agree to the terms and conditions
+        </label>
+        
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>

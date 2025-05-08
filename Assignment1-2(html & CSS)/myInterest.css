@@ -1,0 +1,142 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: purple;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #6c5ce7;
+    color: purple;
+    border-radius: 8px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: orange;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #6c5ce7;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Interests Section */
+.interests {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.interests h2 {
+    font-size: 2rem;
+    color: #6c5ce7;
+}
+
+.interests ul {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.interests li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Sections (Chess, Music, Travel, Movies) */
+.section {
+    margin: 30px 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #6c5ce7;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.section a:hover {
+    background-color: #a29bfe;
+}
+
+/* Table Section */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+}

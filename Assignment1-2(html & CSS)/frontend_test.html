@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Details with Beds</title>
+    <script>
+        async function fetchRoomDetails() {
+            try {
+                const response = await fetch("http://localhost:8085/rooms-with-beds"); // Adjust API URL if needed
+                const data = await response.json();
+                console.log("Fetched Data:", data); // Debugging
+
+                const container = document.getElementById("roomDetails");
+                container.innerHTML = ""; // Clear previous data
+
+                data.forEach(room => {
+                    const roomDiv = document.createElement("div");
+                    roomDiv.classList.add("room");
+
+                    // Room Details
+                    roomDiv.innerHTML = `
+                        <h2>Room Location: ${room.cl_rlocation}</h2>
+                        <p><strong>Facilities:</strong> ${room.cl_rfacilities}</p>
+                        <p><strong>Rent:</strong> ₹${room.cl_rrent}</p>
+                        <p><strong>Floor:</strong> ${room.cl_rfloor}</p>
+                        <h3>Beds:</h3>
+                        <ul>${room.beds.length > 0 ? room.beds.map(bed => `<li>Bed ID: ${bed.id.clBid} | Status: ${bed.clBstatus} | Rent: ₹${bed.clBrent}</li>`).join("") : "<li>No beds available</li>"}</ul>
+                    `;
+
+                    // Check if 3D Model is available
+                    if (room.cl_r3dmode) {
+                        const iframe = document.createElement("iframe");
+                        iframe.src = room.cl_r3dmode;
+                        iframe.width = "600";
+                        iframe.height = "400";
+                        iframe.allow = "fullscreen";
+                        iframe.style.border = "1px solid #ddd";
+                        roomDiv.appendChild(iframe);
+                    } else {
+                        const noModelText = document.createElement("p");
+                        noModelText.innerText = "No 3D Model Available";
+                        roomDiv.appendChild(noModelText);
+                    }
+
+                    container.appendChild(roomDiv);
+                });
+
+            } catch (error) {
+                console.error("Error fetching room details:", error);
+                document.getElementById("roomDetails").innerHTML = "<p>Error fetching data</p>";
+            }
+        }
+
+        window.onload = fetchRoomDetails;
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .room { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Room Details with Beds</h1>
+    <div id="roomDetails">Loading...</div>
+</body>
+</html>
