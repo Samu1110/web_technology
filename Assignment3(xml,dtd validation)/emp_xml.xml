@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- /<?xml-stylesheet type="text/css" href="emp_xml.css"?> -->
+<?xml-stylesheet type="text/xsl" href="emp_xsl.xsl"?>
+<company>
+    <employee>
+        <id>EN2212343</id>
+        <name>samruddhi mithari</name>
+        <department>Manager</department>
+        <salary>80000</salary>
+    </employee>
+    <employee>
+        <id>EN4656676</id>
+        <name>samiksha</name>
+        <department>Sales</department>
+        <salary>60000</salary>
+    </employee>
+     <employee>
+        <id>EN4656675</id>
+        <name>jaee</name>
+        <department>Sales</department>
+        <salary>60000</salary>
+    </employee>
+</company>

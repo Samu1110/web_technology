@@ -1,0 +1,70 @@
+/* Elegant Page Styling */
+company {
+    display: block;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, whitesmoke, lightgray);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Employee Card Styling */
+employee {
+    display: block;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+    border-left: 6px solid steelblue;
+}
+
+employee:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography and Field Styling */
+id, name, department, salary {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Unique Colors for Each Field */
+id {
+    color: midnightblue;
+    background: aliceblue;
+}
+
+name {
+    color: darkslategray;
+    font-size: 24px;
+    background: lavender;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+department {
+    color: firebrick;
+    font-style: italic;
+    background: mistyrose;
+}
+
+salary {
+    color: darkgoldenrod;
+    background: beige;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    employee {
+        width: 85%;
+    }
+}

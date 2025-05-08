@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee id="E101">
+        <name>samruddhi</name>
+        <designation>Software Engineer</designation>
+        <salary>75000</salary>
+    </employee>
+    <employee id="E102">
+        <name>Jaee</name>
+        <designation>Data Analyst</designation>
+        <salary>68000</salary>
+    </employee>
+</employees>

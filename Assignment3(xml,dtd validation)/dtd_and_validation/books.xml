@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "books.dtd">
+<bookstore>
+    <book>
+        <title>Introduction to XML</title>
+        <author>samruddhi</author>
+        <price>29.99</price>
+    </book>
+    <book>
+        <title>Learning Java</title>
+        <author>jaee</author>
+        <price>39.99</price>
+    </book>
+</bookstore>
