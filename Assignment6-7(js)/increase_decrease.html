@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Font Size Animation</title>
+  <style>
+    #animatedText {
+      font-size: 20px;
+      transition: font-size 0.1s;
+    }
+  </style>
+</head>
+<body>
+
+<h2 id="animatedText">Samruddhi</h2>
+
+<script>
+  const text = document.getElementById("animatedText");
+
+  let fontSize = 20;        // Starting font size
+  let growing = true;       // Direction of change
+
+  setInterval(() => {
+    // Increase or decrease font size
+    if (growing) {
+      fontSize += 1;
+      if (fontSize >= 40) growing = false;
+    } else {
+      fontSize -= 1;
+      if (fontSize <= 20) growing = true;
+    }
+
+    text.style.fontSize = fontSize + "px";
+  }, 100);
+</script>
+
+</body>
+</html>
