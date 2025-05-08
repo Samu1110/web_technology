@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
+<library>
+    <book>
+        <id>001</id>
+        <title>Java Programming</title>
+        <author>Samruddhi Mithari</author>
+        <price>500</price>
+    </book>
+    <book>
+        <id>002</id>
+        <title>Data Structures</title>
+        <author>Samiksha</author>
+        <price>650</price>
+    </book>
+</library>

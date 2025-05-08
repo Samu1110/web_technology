@@ -1,0 +1,19 @@
+﻿===== Student Records =====
+
+ID: 101
+Name: Samruddhi
+Course: Computer Science
+
+ID: 102
+Name: Samiksha
+Course: Information Technology
+
+ID: 103
+Name: Parshw
+Course: Software Engineering
+
+ID: 104
+Name: Pratik
+Course: Data Science
+
+==========================

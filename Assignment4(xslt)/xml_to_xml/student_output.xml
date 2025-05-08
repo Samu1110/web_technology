@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<university>
+  <department name="Engineering">
+    <studentRecord>
+      <studentID>101</studentID>
+      <fullName>Samruddhi</fullName>
+      <major>Computer Science</major>
+    </studentRecord>
+    <studentRecord>
+      <studentID>102</studentID>
+      <fullName>Samiksha</fullName>
+      <major>Information Technology</major>
+    </studentRecord>
+    <studentRecord>
+      <studentID>103</studentID>
+      <fullName>Parshw</fullName>
+      <major>Software Engineering</major>
+    </studentRecord>
+    <studentRecord>
+      <studentID>104</studentID>
+      <fullName>Pratik</fullName>
+      <major>Data Science</major>
+    </studentRecord>
+  </department>
+</university>

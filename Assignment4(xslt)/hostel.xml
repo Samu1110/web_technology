@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hostel.xsl"?>
+<hostel>
+    <room>
+        <room_no>101</room_no>
+        <student_name>samiksha</student_name>
+        <student_id>S001</student_id>
+        <room_type>Single</room_type>
+        <fees>5000</fees>
+    </room>
+    <room>
+        <room_no>102</room_no>
+        <student_name>samruddhi mithari</student_name>
+        <student_id>S002</student_id>
+        <room_type>Double</room_type>
+        <fees>4000</fees>
+    </room>
+    <room>
+        <room_no>103</room_no>
+        <student_name>diksha</student_name>
+        <student_id>S003</student_id>
+        <room_type>Single</room_type>
+        <fees>5000</fees>
+    </room>
+</hostel>

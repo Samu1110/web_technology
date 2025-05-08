@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="group_member_xsl.xsl"?>
+<groupMembers>
+    <member>
+        <name>Samruddhi</name>
+        <roll>Leader</roll>
+        <expertise>Project Management,Spring Boot</expertise>
+    </member>
+    <member>
+        <name>Samiksha</name>
+        <roll>Frontend Developer</roll>
+        <expertise>UI/UX Design, React.js</expertise>
+    </member>
+    <member>
+        <name>Parshw</name>
+        <roll>Backend Developer</roll>
+        <expertise>Spring Boot, MySQL</expertise>
+    </member>
+    <member>
+        <name>Pratik</name>
+        <roll>Backend Developer</roll>
+        <expertise>Node.js</expertise>
+    </member>
+</groupMembers>

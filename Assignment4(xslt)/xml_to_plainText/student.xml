@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+<students>
+    <student>
+        <id>101</id>
+        <name>Samruddhi</name>
+        <course>Computer Science</course>
+    </student>
+    <student>
+        <id>102</id>
+        <name>Samiksha</name>
+        <course>Information Technology</course>
+    </student>
+    <student>
+        <id>103</id>
+        <name>Parshw</name>
+        <course>Software Engineering</course>
+    </student>
+    <student>
+        <id>104</id>
+        <name>Pratik</name>
+        <course>Data Science</course>
+    </student>
+</students>
